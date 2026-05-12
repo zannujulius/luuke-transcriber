@@ -1,0 +1,12 @@
+.env
+n8n_data
+local-files
+#remove all env file 
+
+*.json
+
+venv
+
+.claude
+
+__pycache__/
