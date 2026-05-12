@@ -8,7 +8,7 @@ from fastapi.responses import JSONResponse
 app = FastAPI(title="Whisper Diarization API")
 
 DEVICE = "cpu"
-HF_TOKEN = os.environ.get("HF_TOKEN", "REMOVED_TOKEN")
+HF_TOKEN = os.environ.get("HF_TOKEN", "")
 MODEL_SIZE = os.environ.get("WHISPER_MODEL", "base")
 SPEAKER_LABELS = ["SPEAKER_1", "SPEAKER_2", "SPEAKER_3", "SPEAKER_4"]
 
