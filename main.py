@@ -1,5 +1,7 @@
 import os
 import tempfile
+from dotenv import load_dotenv
+load_dotenv()
 import whisperx
 from whisperx.diarize import DiarizationPipeline
 from fastapi import FastAPI, File, UploadFile, HTTPException, Query
