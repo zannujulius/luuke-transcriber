@@ -1,6 +1,6 @@
 services:
   whisper-api:
-    build: ./whisper-api
+    build: .
     restart: always
     ports:
       - "8030:8030"
