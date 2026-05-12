@@ -4,6 +4,9 @@ services:
     restart: always
     ports:
       - "8030:8030"
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+      - WHISPER_MODEL=base
     healthcheck:
       test: ["CMD", "wget", "--spider", "-q", "http://localhost:8030/health"]
       interval: 30s
